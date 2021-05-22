@@ -1,0 +1,30 @@
+<class 'sklearn.svm._classes.SVC'>
+              precision    recall  f1-score   support
+
+           0       0.98      0.82      0.89      3388
+           1       0.17      0.67      0.27       188
+
+    accuracy                           0.81      3576
+   macro avg       0.57      0.75      0.58      3576
+weighted avg       0.94      0.81      0.86      3576
+
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>
+              precision    recall  f1-score   support
+
+           0       0.98      0.77      0.86      3388
+           1       0.15      0.72      0.25       188
+
+    accuracy                           0.77      3576
+   macro avg       0.57      0.75      0.56      3576
+weighted avg       0.94      0.77      0.83      3576
+
+<class 'sklearn.linear_model._logistic.LogisticRegression'>
+              precision    recall  f1-score   support
+
+           0       0.99      0.17      0.29      3388
+           1       0.06      0.97      0.11       188
+
+    accuracy                           0.21      3576
+   macro avg       0.53      0.57      0.20      3576
+weighted avg       0.94      0.21      0.28      3576
+
