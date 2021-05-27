@@ -27,8 +27,8 @@ def get_lstm_vectors(lstm_model, MODEL_INPUT, MODEL_OUTPUT, embedded_text):
     # start sequence is 1 with all zeros behind
     start_sequence = np.zeros((1, MODEL_INPUT))
     start_sequence[0][0] = 1
-    # index of lstm model = 8 because we use 2 lstm layers
-    feature_extractor = models.Model(inputs = lstm_model.inputs, outputs = lstm_model.get_layer(index=8).output)
+    # index of lstm model = 6 because only need the context vector
+    feature_extractor = models.Model(inputs = lstm_model.inputs, outputs = lstm_model.get_layer(index=6).output)
     for doc in embedded_text:
         vector_to_context = np.reshape(np.array(doc), (-1, len(doc)))
         features = feature_extractor([vector_to_context, start_sequence])
