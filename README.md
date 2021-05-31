@@ -1,4 +1,7 @@
 # MLProject_20202
+## IMPORTANT
+- The project is run entirely on Google Colab, therefore in each notebook the first cell (containing "import os" and "os.chdir...") is used to move into the project directory on Google Drive.
+- When running on local machine this cell can be omitted.
 ## Job Postings Prediction
 - The dataset is found on Kaggle: kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction
 - The objective is to train a model that can detect whether a job postings is fake or not
